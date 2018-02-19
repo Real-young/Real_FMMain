@@ -1,9 +1,9 @@
 {
   "name": "Real_FMMain",
   "version": "0.1.0",
-  "summary": "A short description of Real_FMMain.",
+  "summary": "Real_FMMain.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/14049575@qq.com/Real_FMMain",
+  "homepage": "https://github.com/Real-young/Real_FMMain",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "14049575@qq.com": "14049575@qq.com"
   },
   "source": {
-    "git": "https://github.com/14049575@qq.com/Real_FMMain.git",
+    "git": "https://github.com/Real-young/Real_FMMain.git",
     "tag": "0.1.0"
   },
   "platforms": {
