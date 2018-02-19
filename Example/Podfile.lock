@@ -1,0 +1,19 @@
+PODS:
+  - Real_FMBase/Category (0.5.1)
+  - Real_FMMain (0.1.0):
+    - Real_FMBase/Category
+
+DEPENDENCIES:
+  - Real_FMMain (from `../`)
+
+EXTERNAL SOURCES:
+  Real_FMMain:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Real_FMBase: 70928906d85feb1272bdb8c57ad98543f385a469
+  Real_FMMain: d77e1ea7d65576b75b0950621f98ad805a3dde2a
+
+PODFILE CHECKSUM: 6ba707b3e7e1f1c2bb529bbae692290de392c0db
+
+COCOAPODS: 1.2.1

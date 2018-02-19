@@ -1,0 +1,32 @@
+{
+  "name": "Real_FMMain",
+  "version": "0.1.0",
+  "summary": "A short description of Real_FMMain.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/14049575@qq.com/Real_FMMain",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "14049575@qq.com": "14049575@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/14049575@qq.com/Real_FMMain.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Real_FMMain/Classes/**/*",
+  "resource_bundles": {
+    "Real_FMMain": [
+      "Real_FMMain/Assets/*"
+    ]
+  },
+  "dependencies": {
+    "Real_FMBase/Category": [
+
+    ]
+  }
+}

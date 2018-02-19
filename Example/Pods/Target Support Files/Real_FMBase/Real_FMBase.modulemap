@@ -1,0 +1,6 @@
+framework module Real_FMBase {
+  umbrella header "Real_FMBase-umbrella.h"
+
+  export *
+  module * { export * }
+}

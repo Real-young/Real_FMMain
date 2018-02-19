@@ -32,11 +32,12 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'Real_FMMain/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'Real_FMMain' => ['Real_FMMain/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'Real_FMMain' => ['Real_FMMain/Assets/*']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+    s.dependency 'Real_FMBase/Category'
 end

@@ -1,0 +1,6 @@
+framework module Pods_Real_FMMain_Example {
+  umbrella header "Pods-Real_FMMain_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

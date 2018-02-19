@@ -7,11 +7,32 @@
 //
 
 #import "YbmAppDelegate.h"
-
+#import "YbmTabbarController.h"
+#import "YbmTabBar.h"
+#import "TestVC.h"
 @implementation YbmAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    YbmTabbarController *rootVC = [YbmTabbarController tabBarControllerWithAddChildVCsBlock:^(YbmTabbarController *tabBarC) {
+        [tabBarC addChildVC:[TestVC new] normalImageName:@"tabbar_find_n" selectedImageName:@"tabbar_find_h" isRequiredNavController:YES];
+        [tabBarC addChildVC:[UIViewController new] normalImageName:@"tabbar_sound_n" selectedImageName:@"tabbar_sound_h" isRequiredNavController:YES];
+        [tabBarC addChildVC:[UIViewController new] normalImageName:@"tabbar_download_n" selectedImageName:@"tabbar_download_h" isRequiredNavController:YES];
+        [tabBarC addChildVC:[UIViewController new] normalImageName:@"tabbar_me_n" selectedImageName:@"tabbar_me_h" isRequiredNavController:YES];
+    }];
+    
+    YbmTabBar *tabbar = (YbmTabBar *)rootVC.tabBar;
+    tabbar.middleClickBlock = ^(BOOL isPlaying) {
+        if (isPlaying) {
+            NSLog(@"播放");
+        }else {
+            NSLog(@"暂停");
+        }
+    };
+    
+    self.window.rootViewController = rootVC;
+    [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
 }

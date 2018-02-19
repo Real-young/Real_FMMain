@@ -1,3 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'git@github.com:Real-young/Real_FMSpecs.git'
+
 use_frameworks!
 
 target 'Real_FMMain_Example' do
